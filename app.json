@@ -1,0 +1,10 @@
+{
+    "name": "slack-flim",
+    "env": {
+        "SLACK_TOKEN": {
+            "description": "slack token to secure the bot",
+            "value": "",
+            "required": true
+        }
+    }
+}
