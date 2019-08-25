@@ -7,5 +7,5 @@ FROM drone/ca-certs
 ARG APP_PATH
 WORKDIR /
 COPY --from=0 /go/src/github.com/nouney/slack-flim/server .
-COPY --from=0 /go/src/github.com/nouney/imgs imgs
+ADD imgs /go/src/github.com/nouney/slack-flim/imgs
 ENTRYPOINT ["/server"]
